@@ -1,3 +1,12 @@
 #adminmenu .wp-submenu {
 	margin-left: 0;
 }
+
+.radios-container {
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+.radio-transparent input[type=radio]:checked ~ .check {
+  background-color: rgb(255, 255, 255) !important;
+}

@@ -1,0 +1,35 @@
+.navbar-transparent.navbar {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(16, 116, 187, 0.84) !important;
+}
+.navbar-transparent.navbar .navbar-form .form-control-wrapper input.form-control::-webkit-input-placeholder,
+.navbar-transparent.navbar .navbar-form input.form-control::-webkit-input-placeholder {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.navbar-transparent.navbar .navbar-form .form-control-wrapper input.form-control::-moz-placeholder,
+.navbar-transparent.navbar .navbar-form input.form-control::-moz-placeholder {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.navbar-transparent.navbar .navbar-form .form-control-wrapper input.form-control:-ms-input-placeholder,
+.navbar-transparent.navbar .navbar-form input.form-control:-ms-input-placeholder {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.navbar-transparent.navbar .navbar-form .form-control-wrapper input.form-control::placeholder,
+.navbar-transparent.navbar .navbar-form input.form-control::placeholder {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.navbar-transparent.navbar .dropdown-menu li > a:hover,
+.navbar-transparent.navbar .dropdown-menu li > a:focus {
+  color: #03a9f4;
+}
+.navbar-transparent.navbar .dropdown-menu .active > a {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(16, 116, 187, 0.84) !important;
+}
+.navbar-transparent.navbar .dropdown-menu .active > a:hover,
+.navbar-transparent.navbar .dropdown-menu .active > a:focus {
+  color: rgba(16, 116, 187, 0.84) !important;
+}
+.radio-transparent input[type=radio]:checked ~ .check {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
