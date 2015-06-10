@@ -38,6 +38,8 @@
 
     		evt.target.submit();
     	});
+
+        $('.alert.options-updated').fadeOut(10000);
 	});
 
 })(jQuery);

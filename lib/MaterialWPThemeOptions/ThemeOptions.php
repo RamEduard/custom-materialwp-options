@@ -45,7 +45,7 @@ class ThemeOptions
 		    update_option('materialwp-materialwp_custom-scripts', $customScripts);
 
 		    ?>
-			    <div class="alert alert-dismissable alert-success">
+			    <div class="alert alert-dismissable alert-success options-updated">
 				    <button type="button" class="close" data-dismiss="alert">×</button>
 				    <strong>Options updated!</strong>.
 				</div>
