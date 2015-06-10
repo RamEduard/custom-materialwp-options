@@ -17,10 +17,14 @@ class ThemeOptions
 	{
 		# Add submenu
 		add_action('admin_menu', __CLASS__ . '::addAppearanceMenu');
-		# Add custom styles to admin page
-		add_action('admin_enqueue_scripts', __CLASS__ . '::addCustomStylesAndScripts');
-		# Enqueue material design
-    	add_action('admin_enqueue_scripts', 'materialwp_scripts');
+
+		if ($_GET['page'] === 'material-theme-options') {
+			# Enqueue material design
+	    	add_action('admin_enqueue_scripts', 'materialwp_scripts');
+			# Add custom styles to admin page
+			add_action('admin_enqueue_scripts', __CLASS__ . '::addCustomStylesAndScripts');
+		}
+		
     	# Enqueue material design custom
     	add_action( 'wp_enqueue_scripts', __CLASS__ . '::addCustomStylesAndScriptsFrontend' );
 	}
