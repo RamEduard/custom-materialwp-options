@@ -19,8 +19,8 @@
    padding-top: 25px;
 }
 .navbar .navbar-nav>li>a {
-   font-size: 16px;
-   font-weight: 500;
+   font-size: 14px;
+   font-weight: bold;
    text-transform: uppercase;
 }
 .navbar .navbar-brand .logo {
@@ -35,31 +35,37 @@
    font-weight: 400;
 }
 .navbar-transparent.navbar {
-   background-color: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(255, 255, 255, 0.01) !important;
    color: rgb(26, 148, 234) !important;
+}
+.navbar-transparent.navbar .navbar-nav>.open>a {
+   background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.navbar-transparent.navbar .navbar-nav>.open>.dropdown-menu {
+   background-color: rgba(255, 255, 255, 0.9) !important;
 }
 .navbar-transparent.navbar .navbar-form .form-control-wrapper input.form-control::-webkit-input-placeholder,
 .navbar-transparent.navbar .navbar-form input.form-control::-webkit-input-placeholder {
-   background-color: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(255, 255, 255, 0.01) !important;
 }
 .navbar-transparent.navbar .navbar-form .form-control-wrapper input.form-control::-moz-placeholder,
 .navbar-transparent.navbar .navbar-form input.form-control::-moz-placeholder {
-   background-color: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(255, 255, 255, 0.01) !important;
 }
 .navbar-transparent.navbar .navbar-form .form-control-wrapper input.form-control:-ms-input-placeholder,
 .navbar-transparent.navbar .navbar-form input.form-control:-ms-input-placeholder {
-   background-color: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(255, 255, 255, 0.01) !important;
 }
 .navbar-transparent.navbar .navbar-form .form-control-wrapper input.form-control::placeholder,
 .navbar-transparent.navbar .navbar-form input.form-control::placeholder {
-   background-color: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(255, 255, 255, 0.01) !important;
 }
 .navbar-transparent.navbar .dropdown-menu li > a:hover,
 .navbar-transparent.navbar .dropdown-menu li > a:focus {
    color: #03a9f4;
 }
 .navbar-transparent.navbar .dropdown-menu .active > a {
-   background-color: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(255, 255, 255, 0.01) !important;
    color: rgb(26, 148, 234) !important;
 }
 .navbar-transparent.navbar .dropdown-menu .active > a:hover,
@@ -67,7 +73,7 @@
    color: rgb(26, 148, 234) !important;
 }
 .radio-transparent input[type=radio]:checked ~ .check {
-   background-color: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(255, 255, 255, 0.01) !important;
 }
 .radio-transparent input[type=radio]:checked~.circle, 
 .radio-default input[type=radio]:checked~.circle {

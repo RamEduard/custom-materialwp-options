@@ -74,6 +74,7 @@ class ThemeOptions
     	?>
     	<div class="wrap">
 	        <div class="wqell bs-component">
+	        	<a href="#" class="btn btn-success btn-fab btn-raised mdi-content-save" id="floating-save"></a>
 		        <form id="material-theme-options" class="form-horizontal" method="POST" action="">
 				    <fieldset>
 				        <legend>
