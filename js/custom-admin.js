@@ -12,9 +12,12 @@
 			jQuery('#custom-menu-logo-url').val(imgurl);
 			tb_remove();
 		}
-	});
-    
-	$(document).ready(function() {
+
+        $('#floating-save').click(function(evt) {
+            evt.preventDefault();
+            $('#button-save').click();
+        });
+	
 		var editor_styles = ace.edit("editor-custom-styles");
     	editor_styles.setTheme("ace/theme/twilight");
     	editor_styles.getSession().setMode("ace/mode/css");

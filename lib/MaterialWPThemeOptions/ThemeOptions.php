@@ -183,7 +183,7 @@ class ThemeOptions
 				        <input type="hidden" name="update_settings" value="Y">
 				        <div class="form-group">
 				            <div class="col-md-10 col-md-offset-2">
-				                <button type="submit" class="btn btn-success">Update options</button>
+				                <button type="submit" id="button-save" class="btn btn-success">Update options</button>
 				            </div>
 				        </div>
 				    </fieldset>
