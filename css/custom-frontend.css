@@ -21,6 +21,8 @@
 .navbar .navbar-nav>li>a {
    font-size: 14px;
    font-weight: bold;
+   padding-bottom: 10px;
+   padding-top: 10px;
    text-transform: uppercase;
 }
 .navbar .navbar-brand .logo {
@@ -33,6 +35,11 @@
    font-size: 20px;
    font-style: italic;
    font-weight: 400;
+}
+.navbar-right .open:not(:last-child) .dropdown-menu {
+   right: auto;
+   left: 0;
+   width: 150%;
 }
 .navbar-transparent.navbar {
    background-color: rgba(255, 255, 255, 0.01) !important;
