@@ -4,6 +4,7 @@
 #floating-save {
 	position: fixed;
 	right: 10px;
+	z-index: 10;
 }
 .radios-container {
 	max-height: 250px;
