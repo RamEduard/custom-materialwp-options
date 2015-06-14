@@ -138,7 +138,7 @@ class ThemeOptions
                 		</div>
 				        <div class="form-group">
 				        	<label for="custom-class-header" class="col-md-2 control-label">Header type</label>
-				        	<div class="col-md-5 radios-container">
+				        	<div class="col-md-4 radios-container">
 				        		<?php $customClassHeader = get_option('materialwp-materialwp_custom-class-header'); ?>
 				        		<?php foreach (self::getHeaderTypesArray() as $class => $name) : ?>
 				        			<div class="radio radio-<?php echo $class; ?>">
@@ -148,6 +148,9 @@ class ThemeOptions
 							    		</label>
 								  	</div>	
 				        		<?php endforeach; ?>
+				        	</div>
+				        	<div class="col-md-6">
+				        		<?php echo self::getExampleNavbar(); ?>
 				        	</div>
 				        </div>
 				        <div class="form-group">
@@ -242,14 +245,37 @@ class ThemeOptions
     {
     	# Class => Name
     	return array(
-    		'black'       => 'Navbar black',
-    		'danger'      => 'Navbar danger',
-    		'inverse'     => 'Navbar inverse',
-    		'success'     => 'Navbar success',
-    		'transparent' => 'Navbar transparent',
-    		'warning'     => 'Navbar warning',
-    		'white'       => 'Navbar white',
+    		'black'                => 'Navbar black',
+    		'danger'               => 'Navbar danger',
+    		'inverse'              => 'Navbar inverse',
+    		'material-amber'       => 'Navbar amber',
+    		'material-blue'        => 'Navbar blue',
+    		'material-blue-grey'   => 'Navbar blue grey',
+    		'material-brown'       => 'Navbar brown',
+    		'material-cyan'        => 'Navbar cyan',
+    		'material-deep-orange' => 'Navbar deep orange',
+    		'material-deep-purple' => 'Navbar deep purple',
+    		'material-green'       => 'Navbar green',
+    		'material-grey'        => 'Navbar grey',
+    		'material-indigo'      => 'Navbar indigo',
+    		'material-light-blue'  => 'Navbar light blue',
+    		'material-light-green' => 'Navbar light green',
+    		'material-lime'        => 'Navbar lime',
+    		'material-orange'      => 'Navbar orange',
+    		'material-pink'        => 'Navbar pink',
+    		'material-purple'      => 'Navbar purple',
+    		'material-teal'        => 'Navbar teal',
+    		'material-red'         => 'Navbar red',
+    		'success'              => 'Navbar success',
+    		'transparent'          => 'Navbar transparent',
+    		'warning'              => 'Navbar warning',
+    		'white'                => 'Navbar white',
 		);
+    }
+
+    static function getExampleNavbar()
+    {
+    	return '<div class="navbar" id="custom-navbar"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="javascript:void(0)">Brand<div class="ripple-wrapper"></div></a></div><div class="navbar-collapse collapse navbar-responsive-collapse"><ul class="nav navbar-nav"><li class="active"><a href="javascript:void(0)">Active</a></li><li><a href="javascript:void(0)">Link</a></li><li class="dropdown"><a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="javascript:void(0)">Action</a></li><li><a href="javascript:void(0)">Another action</a></li><li><a href="javascript:void(0)">Something else here</a></li><li class="divider"></li><li class="dropdown-header">Dropdown header</li><li><a href="javascript:void(0)">Separated link</a></li><li><a href="javascript:void(0)">One more separated link</a></li></ul></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="javascript:void(0)">Link</a></li><li class="dropdown"><a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="javascript:void(0)">Action</a></li><li><a href="javascript:void(0)">Another action</a></li><li><a href="javascript:void(0)">Something else here</a></li><li class="divider"></li><li><a href="javascript:void(0)">Separated link</a></li></ul></li></ul></div></div>';
     }
 
 }
