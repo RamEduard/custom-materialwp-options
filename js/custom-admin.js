@@ -1,6 +1,14 @@
 (function($) {
 
 	$(document).ready(function() {
+
+        $('.radios-container [type=radio]').change(function() {
+            $('#custom-navbar').removeClass();
+            $('#custom-navbar').addClass('navbar ' + $(this).val());
+        });
+
+        $('#custom-navbar').addClass($('.radios-container [type=radio]:checked').val());
+
 		$('#upload_image_button').click(function() {
 			formfield = $('#custom-menu-logo-url').attr('name');
 			tb_show('', 'media-upload.php?type=image&TB_iframe=true');
